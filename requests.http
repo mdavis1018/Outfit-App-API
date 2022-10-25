@@ -1,0 +1,25 @@
+### display all Outfits
+get http://localhost:3000/outfits.json
+
+### display a particular outfit
+get http://localhost:3000/outfits/2.json
+
+### create outfit
+POST http://localhost:3000/outfits.json
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "title": "Friday"
+}
+
+### edit outfit
+PATCH http://localhost:3000/outfits/3.json
+Content-Type: application/json
+
+{
+  "title": "Thursday"
+}
+
+### destroy outfit
+DELETE http://localhost:3000/outfits/3.json

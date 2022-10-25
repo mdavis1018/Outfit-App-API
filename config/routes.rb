@@ -3,4 +3,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  ## outfit routes
+  get "/outfits" => "outfits#index"
+  get "/outfits/:id" => "outfits#show"
+  post "/outfits" => "outfits#create"
+  patch "/outfits/:id" => "outfits#update"
+  delete "outfits/:id" => "outfits#destroy"
 end
